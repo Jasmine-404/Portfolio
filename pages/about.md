@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: About Me - Jingmiao FEI
 headshot: /assets/img/headshot.webp
 permalink: /about
 ---
