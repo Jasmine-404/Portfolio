@@ -1,7 +1,23 @@
 <section class="projects-container">
-  <h2>Projects</h2>
+  <h2>Data Analysis</h2>
 
-  {% for project in site.projects %}
+  {% for project in site.dataanalysis %}
+    <a class="project-link" href="{{ project.url | relative_url }}">
+      <div class="project-thumbnail-wrapper">
+        <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
+      </div>
+      <div class="project-label">
+        {{ project.title }}
+      </div>
+      <div class="project-link-arrow">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </div>
+    </a>
+  {% endfor %}
+
+  <h2>Data Visualization</h2>
+
+  {% for project in site.visualizations %}
     <a class="project-link" href="{{ project.url | relative_url }}">
       <div class="project-thumbnail-wrapper">
         <img class="project-thumbnail" src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
